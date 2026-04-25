@@ -298,4 +298,26 @@ footer {
     .section-header h2 {
         font-size: 2rem;
     }
+    
+    main {
+        padding: 1rem 5%;
+    }
+    
+    .footer-content {
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-neon {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .logo span {
+        font-size: 1.2rem;
+    }
 }
