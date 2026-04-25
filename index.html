@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armageddon Gaming Cafe | Hosur</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('assets/hero_bg_1777131237079.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            z-index: -1;
+            /* Removed pulse animation for static image, but we can keep it subtle */
+            animation: pulseBg 10s infinite alternate;
+        }
+
+        @keyframes pulseBg {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 2.5rem auto;
+        }
+
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 243, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            color: var(--neon-cyan);
+        }
+        
+        .feature-card:nth-child(even) .feature-icon {
+            background: rgba(255, 0, 234, 0.1);
+            color: var(--neon-pink);
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar glass-panel">
+        <a href="index.html" class="logo">
+            <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+            <span>Armageddon</span>
+        </a>
+        
+        <button class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gaming.html">Gaming Zones</a></li>
+            <li><a href="cafe.html">Cafe Menu</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="booking.html" class="btn-neon" style="padding: 0.4rem 1.2rem;">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Enter The <br><span class="gradient-text">Ultimate Gaming</span> Experience</h1>
+                <p>Welcome to Hosur's premier gaming destination. From High-End PCs and PS5s to an immersive VR world, complete with a fantastic Cafe.</p>
+                <div class="cta-group">
+                    <a href="gaming.html" class="btn-neon">Explore Zones</a>
+                    <a href="booking.html" class="btn-neon btn-neon-pink">Book a Session</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="section-header">
+                <h2>Why Choose <span class="neon-text-cyan">Armageddon?</span></h2>
+                <p>Experience the absolute pinnacle of gaming and relaxation under one roof.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="monitor" size="32"></i>
+                    </div>
+                    <h3>Top-Tier Rigs</h3>
+                    <p>Play on cutting-edge Gaming PCs designed for extreme performance and zero lag.</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="coffee" size="32"></i>
+                    </div>
+                    <h3>Cafe & QSR</h3>
+                    <p>Recharge with our mouth-watering menu featuring fries, momos, sandwiches, and mojitos.</p>
+                </div>
+
+                <div class="glass-card feature-card">
+                    <div class="feature-icon">
+                        <i data-lucide="headset" size="32"></i>
+                    </div>
+                    <h3>Next-Gen VR</h3>
+                    <p>Step directly into the game with our highly immersive Virtual Reality setups.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+                    <span>Armageddon</span>
+                </a>
+                <p>The ultimate gaming and cafe experience located right here in Hosur. Level up your leisure time.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="gaming.html">Gaming Zones</a>
+                <a href="cafe.html">Cafe Menu</a>
+                <a href="store.html">Used Console Store</a>
+                <a href="booking.html">Book Online</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i data-lucide="map-pin" size="16" style="margin-right: 8px;"></i> Hosur, Tamil Nadu</p>
+                <p><i data-lucide="phone" size="16" style="margin-right: 8px;"></i> +91 98765 43210</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="instagram"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="facebook"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Armageddon Gaming Cafe. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

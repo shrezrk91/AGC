@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe & QSR | Armageddon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .menu-category {
+            margin-bottom: 4rem;
+        }
+
+        .menu-category h2 {
+            font-size: 2rem;
+            color: var(--neon-pink);
+            margin-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 0, 234, 0.2);
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .category-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+        }
+
+        .menu-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-main);
+        }
+
+        .menu-details h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .menu-details p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar glass-panel">
+        <a href="index.html" class="logo">
+            <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+            <span>Armageddon</span>
+        </a>
+        
+        <button class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gaming.html">Gaming Zones</a></li>
+            <li><a href="cafe.html">Cafe Menu</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="booking.html" class="btn-neon" style="padding: 0.4rem 1.2rem;">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Armageddon <span class="neon-text-pink">Cafe</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem;">Fuel your gaming session with our delicious Quick Service bites.</p>
+        </div>
+
+        <!-- Hot Snacks -->
+        <section class="menu-category">
+            <h2>Hot Snacks</h2>
+            <img src="assets/cafe_snacks_1777131356795.png" alt="Hot Snacks" class="category-img">
+            <div class="menu-grid">
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="flame"></i></div>
+                    <div class="menu-details">
+                        <h4>French Fries</h4>
+                        <p>Classic crispy fries, perfectly salted.</p>
+                    </div>
+                </div>
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="flame"></i></div>
+                    <div class="menu-details">
+                        <h4>Chicken Nuggets</h4>
+                        <p>Golden, crispy nuggets served with dip.</p>
+                    </div>
+                </div>
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="flame"></i></div>
+                    <div class="menu-details">
+                        <h4>Momos</h4>
+                        <p>Steamed or fried, served with spicy chutney.</p>
+                    </div>
+                </div>
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="popcorn"></i></div>
+                    <div class="menu-details">
+                        <h4>Popcorn</h4>
+                        <p>Buttered, cheese or caramel crunch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meals -->
+        <section class="menu-category">
+            <h2 style="color: var(--neon-cyan); border-color: rgba(0, 243, 255, 0.2);">Meals & Bites</h2>
+            <img src="assets/cafe_meals_1777131372739.png" alt="Meals and Bites" class="category-img">
+            <div class="menu-grid">
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="utensils"></i></div>
+                    <div class="menu-details">
+                        <h4>Varieties of Maggi</h4>
+                        <p>Classic, Cheese, Spicy, or Egg Maggi.</p>
+                    </div>
+                </div>
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="sandwich"></i></div>
+                    <div class="menu-details">
+                        <h4>Sandwiches</h4>
+                        <p>Grilled paneer, cheese, or chicken filling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beverages -->
+        <section class="menu-category">
+            <h2 style="color: var(--neon-purple); border-color: rgba(157, 0, 255, 0.2);">Beverages</h2>
+            <img src="assets/cafe_drinks_1777131387627.png" alt="Beverages" class="category-img">
+            <div class="menu-grid">
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="glass-water"></i></div>
+                    <div class="menu-details">
+                        <h4>Mojitos</h4>
+                        <p>Mint, Blue Lagoon, or Watermelon splash.</p>
+                    </div>
+                </div>
+                <div class="glass-card menu-item">
+                    <div class="menu-icon"><i data-lucide="coffee"></i></div>
+                    <div class="menu-details">
+                        <h4>Cold Coffee</h4>
+                        <p>Thick, creamy and perfectly blended.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+                    <span>Armageddon</span>
+                </a>
+                <p>The ultimate gaming and cafe experience located right here in Hosur. Level up your leisure time.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="gaming.html">Gaming Zones</a>
+                <a href="cafe.html">Cafe Menu</a>
+                <a href="store.html">Used Console Store</a>
+                <a href="booking.html">Book Online</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i data-lucide="map-pin" size="16" style="margin-right: 8px;"></i> Hosur, Tamil Nadu</p>
+                <p><i data-lucide="phone" size="16" style="margin-right: 8px;"></i> +91 98765 43210</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="instagram"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="facebook"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Armageddon Gaming Cafe. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

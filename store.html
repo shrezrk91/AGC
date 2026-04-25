@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Console Store | Armageddon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-top: 2rem;
+        }
+        
+        .page-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .store-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            padding: 2rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover .product-img {
+            transform: scale(1.05);
+        }
+
+        .product-price {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--neon-cyan);
+        }
+
+        .product-features {
+            list-style: none;
+            text-align: left;
+            margin: 1rem 0;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .product-features li {
+            margin-bottom: 0.5rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-banner {
+            margin-top: 4rem;
+            padding: 3rem;
+            text-align: center;
+            border-radius: 16px;
+            background: linear-gradient(135deg, rgba(157,0,255,0.1) 0%, rgba(0,243,255,0.1) 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar glass-panel">
+        <a href="index.html" class="logo">
+            <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+            <span>Armageddon</span>
+        </a>
+        
+        <button class="mobile-menu-btn">
+            <i data-lucide="menu"></i>
+        </button>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gaming.html">Gaming Zones</a></li>
+            <li><a href="cafe.html">Cafe Menu</a></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="booking.html" class="btn-neon" style="padding: 0.4rem 1.2rem;">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="page-header">
+            <h1>Used Console <span class="neon-text-purple">Store</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem;">Quality checked pre-owned PlayStation consoles available for purchase.</p>
+        </div>
+
+        <div class="store-grid">
+            <!-- PS5 Bundle -->
+            <div class="glass-card product-card">
+                <img src="assets/store_ps5_1777131403199.png" alt="PS5 Disc Edition" class="product-img">
+                <h3>PS5 Disc Edition</h3>
+                <div class="product-price">₹TBD</div>
+                <ul class="product-features">
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Includes 1 Controller</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> With 2 Pre-loaded Games</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Fully Tested & Working</li>
+                </ul>
+                <a href="tel:+919876543210" class="btn-neon" style="margin-top: auto;">Enquire Now</a>
+            </div>
+
+            <!-- PS5 Console Only -->
+            <div class="glass-card product-card">
+                <img src="assets/store_ps5_1777131403199.png" alt="PS5 Digital Edition" class="product-img">
+                <h3>PS5 Digital Edition</h3>
+                <div class="product-price">₹TBD</div>
+                <ul class="product-features">
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Includes 1 Controller</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Console Only (No Games)</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Fully Tested & Working</li>
+                </ul>
+                <a href="tel:+919876543210" class="btn-neon" style="margin-top: auto;">Enquire Now</a>
+            </div>
+
+            <!-- PS4 Bundle -->
+            <div class="glass-card product-card">
+                <img src="assets/store_ps4_1777131423539.png" alt="PS4 Pro" class="product-img">
+                <h3>PS4 Pro</h3>
+                <div class="product-price">₹TBD</div>
+                <ul class="product-features">
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Includes 1 Controller</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> With Random 3 Games</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> 1TB Storage</li>
+                </ul>
+                <a href="tel:+919876543210" class="btn-neon btn-neon-pink" style="margin-top: auto;">Enquire Now</a>
+            </div>
+            
+            <!-- PS4 Console Only -->
+            <div class="glass-card product-card">
+                <img src="assets/store_ps4_1777131423539.png" alt="PS4 Slim" class="product-img">
+                <h3>PS4 Slim</h3>
+                <div class="product-price">₹TBD</div>
+                <ul class="product-features">
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Includes 1 Controller</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> Console Only (No Games)</li>
+                    <li><i data-lucide="check-circle" size="16" style="color: var(--neon-cyan)"></i> 500GB Storage</li>
+                </ul>
+                <a href="tel:+919876543210" class="btn-neon btn-neon-pink" style="margin-top: auto;">Enquire Now</a>
+            </div>
+        </div>
+
+        <div class="contact-banner glass-panel">
+            <h2>Have a Console to Sell?</h2>
+            <p style="color: var(--text-muted); margin: 1rem 0 2rem 0; font-size: 1.1rem;">We buy back used PS4 and PS5 consoles in good condition. Bring your console to the cafe for a quick appraisal and best price.</p>
+            <a href="tel:+919876543210" class="btn-neon">Contact Us for Sell Back</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <a href="index.html" class="logo" style="margin-bottom: 1rem;">
+                    <i data-lucide="gamepad-2" style="color: var(--neon-cyan);"></i>
+                    <span>Armageddon</span>
+                </a>
+                <p>The ultimate gaming and cafe experience located right here in Hosur. Level up your leisure time.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="gaming.html">Gaming Zones</a>
+                <a href="cafe.html">Cafe Menu</a>
+                <a href="store.html">Used Console Store</a>
+                <a href="booking.html">Book Online</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p><i data-lucide="map-pin" size="16" style="margin-right: 8px;"></i> Hosur, Tamil Nadu</p>
+                <p><i data-lucide="phone" size="16" style="margin-right: 8px;"></i> +91 98765 43210</p>
+                <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="instagram"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="facebook"></i></a>
+                    <a href="#" style="color: var(--text-main);"><i data-lucide="twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Armageddon Gaming Cafe. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
